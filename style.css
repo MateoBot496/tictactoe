@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column; 
+    gap: 2vh;
+}
+/*header*/
+
+.header{
+ height: 10%;
+ width: 70%;
+ 
+ margin: 0 auto;
+ border-bottom: 2px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+
+
+/*MAIN*/
+
+
+.main{
+ width: 70%;
+ flex-grow: 1;
+ margin-left: 15%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+/*PREGAME*/
+.start-game{
+
+}
+
+.warning{
+    color: red;
+    position: fixed;
+    margin-top: 5%;
+}
+
+/*BOARD */
+.board{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.width{
+    min-width: 600px;
+    height: 600px;
+}
+
+/* CASILLAS */
+
+.casilla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+
+}
+
+.casilla:hover{
+    background-color: rgb(219, 218, 218);
+    cursor: pointer;
+}
+
+
+
+.b1{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.b2{
+    border-bottom: 2px solid black;
+}
+.b3{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.b4{
+    border-right: 2px solid black;
+}
+.b6{
+    border-left: 2px solid black;
+}
+.b7{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+.b8{
+    border-top: 2px solid black;
+}
+.b9{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.blur{
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: xx-large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.restartButton{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/*ANIMACIONES */
+
+@keyframes fadeIn {
+   from{
+    opacity: 0;
+    transform: scale(0.5);
+   }
+   to{
+    opacity: 1;
+    transform: scale(1);
+   } 
+}
+
+.animacion {
+    animation: fadeIn 0.3s ease-in-out;
+}
+/*MEDIA QUERIES*/
