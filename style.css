@@ -133,8 +133,9 @@ body{
 
 .restartButton{
     border-radius: 20px;
-    background-color: antiquewhite;
-    font-weight: bolder;
+    background-color: rgb(192, 182, 127);
+    width: 20%;
+    height: 5%;
     font-size: large;
 }
 

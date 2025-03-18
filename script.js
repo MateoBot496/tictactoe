@@ -193,6 +193,7 @@ class Game{
         overlay.classList.add("width");
         overlay.classList.add("animacion");
         let restartButton = document.createElement("button");
+        restartButton.classList.add("restartButton");
         restartButton.textContent = "Restart";
 
         if(result == 0){
